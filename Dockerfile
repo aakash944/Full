@@ -5,10 +5,10 @@ FROM apache/beam_java11_sdk
 WORKDIR /app
 
 # Copy your Spring Boot JAR
-COPY target/*.jar app.jar
+COPY demo/target/*.jar app.jar
 
 # Copy your source code (optional, for inspection inside container)
-COPY src /app/src
+COPY demo/src /app/src
 
 # Expose Spring Boot default port
 EXPOSE 8080
