@@ -4,14 +4,14 @@ FROM apache/beam_java11_sdk
 # Set working directory inside the container
 WORKDIR /app
 
-# Copy your Spring Boot JAR
-COPY demo/demo/target/*.jar app.jar
+# Copy the Spring Boot JAR from the project folder
+COPY demo/target/*.jar app.jar
 
-# Copy your source code (optional, for inspection inside container)
-COPY demo/demo/src /app/src
+# Optional: copy source code for inspection/debug
+COPY demo/src /app/src
 
 # Expose Spring Boot default port
 EXPOSE 8080
 
-# Run the application
+# Run the Spring Boot application
 ENTRYPOINT ["java", "-jar", "app.jar"]
