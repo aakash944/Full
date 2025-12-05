@@ -5,7 +5,7 @@ FROM apache/beam_java11_sdk
 WORKDIR /app
 
 # Copy your Spring Boot JAR
-COPY demo/target/*.jar app.jar
+COPY demo/demo/target/*.jar app.jar
 
 # Copy your source code (optional, for inspection inside container)
 COPY demo/src /app/src
