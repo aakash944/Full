@@ -8,7 +8,7 @@ WORKDIR /app
 COPY demo/demo/target/*.jar app.jar
 
 # Copy your source code (optional, for inspection inside container)
-COPY demo/src /app/src
+COPY demo/demo/src /app/src
 
 # Expose Spring Boot default port
 EXPOSE 8080
