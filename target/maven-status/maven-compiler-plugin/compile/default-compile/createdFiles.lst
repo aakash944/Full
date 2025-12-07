@@ -1,4 +1,6 @@
 com\example\demo\StudentApplication.class
-com\example\demo\controller\StudentController.class
+com\example\demo\webconfig$1.class
+com\example\demo\webconfig.class
 com\example\demo\entity\Student.class
 com\example\demo\repository\StudentRepo.class
+com\example\demo\controller\StudentController.class
