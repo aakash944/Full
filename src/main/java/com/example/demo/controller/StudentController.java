@@ -10,8 +10,8 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/students")
 
-//@CrossOrigin("http://localhost:80")
-@CrossOrigin(origins = {"http://localhost:80", "https://frontend-xyz.onrender.com"})
+@CrossOrigin("http://localhost:5500")
+//@CrossOrigin("https://frontend-xyz.onrender.com")
 public class StudentController {
     private final StudentRepo repo;
     StudentController(StudentRepo studentRepo){
