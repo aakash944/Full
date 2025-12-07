@@ -8,9 +8,11 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin("*")
 @RequestMapping("/api/students")
 
-@CrossOrigin("http://localhost:5500")
+
+
 //@CrossOrigin("https://frontend-xyz.onrender.com")
 public class StudentController {
     private final StudentRepo repo;
